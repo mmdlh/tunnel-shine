@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PipeDashboard } from "../components/PipeDashboard";
+export const Route = createFileRoute("/security")({ head: () => ({ meta: [{ title: "安全预警｜地下管廊智慧监管平台" }, { name: "description", content: "地下管廊风险事件分级研判与联动处置。" }, { property: "og:title", content: "管廊安全预警联控" }, { property: "og:description", content: "风险事件分级研判与联动处置。" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PipeDashboard page="security" /> });

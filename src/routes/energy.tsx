@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PipeDashboard } from "../components/PipeDashboard";
+export const Route = createFileRoute("/energy")({ head: () => ({ meta: [{ title: "能源监管｜地下管廊智慧监管平台" }, { name: "description", content: "地下管廊电力负荷、能耗结构与输配状态监管。" }, { property: "og:title", content: "管廊能源管线监管" }, { property: "og:description", content: "能源管线运行与能效实时分析。" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PipeDashboard page="energy" /> });
