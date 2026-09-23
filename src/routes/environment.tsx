@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PipeDashboard } from "../components/PipeDashboard";
+export const Route = createFileRoute("/environment")({ head: () => ({ meta: [{ title: "环境监测｜地下管廊智慧监管平台" }, { name: "description", content: "地下管廊温湿度、气体与通风系统环境监测。" }, { property: "og:title", content: "管廊环境监测中心" }, { property: "og:description", content: "多舱环境因子与通风系统联动分析。" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PipeDashboard page="environment" /> });
